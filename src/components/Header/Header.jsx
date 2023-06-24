@@ -5,15 +5,17 @@ import logo from "../../assets/images/logo.png";
 const Header = () => {
   return (
     <div>
-      <nav className=" p-4 flex items-center justify-between">
+      <nav className="p-4 flex items-center justify-between">
         <div className="flex items-center">
           <img src={logo} alt="Logo" />
-          <span className="text-white font-semibold text-lg">Your Brand</span>
         </div>
 
         <ul className="flex items-center space-x-4">
           <Link to="/home" className=" cursor-pointer">
             Home
+          </Link>
+          <Link to="/statistics" className=" cursor-pointer">
+            Statistics
           </Link>
           <Link to="/about" className=" cursor-pointer">
             About
