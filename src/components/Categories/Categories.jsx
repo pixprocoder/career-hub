@@ -10,7 +10,7 @@ const Categories = () => {
           <h2 className="text-3xl lg:text-6xl text-blue-400 font-bold mb-4">
             Feature Jobs
           </h2>
-          <p className="text-lg  px-56 text-gray-700 font-light mb-8">
+          <p className="text-lg px-4 lg:px-56 text-gray-700 font-light mb-8">
             This is the list of all the jobs that are featured on our website.
             You can apply for these jobs and get hired. are featured on our
             website. You can apply for these jobs and get hired.

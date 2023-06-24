@@ -7,12 +7,16 @@ const HeroSection = () => {
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between px-4">
         <div className="lg:w-1/2">
           <div className=" mb-4">
-            <p className="text-7xl mb-2   text-gray-900 font-bold">One Step</p>
-            <p className="text-7xl mb-2   text-gray-900 font-bold">
+            <p className="text-5xl lg:text-7xl mb-2   text-gray-900 font-bold">
+              One Step
+            </p>
+            <p className="text-5xl lg:text-7xl mb-2   text-gray-900 font-bold">
               {" "}
               Closer To Your
             </p>
-            <p className="text-7xl mb-2 text-blue-400 font-bold">Dream Job</p>
+            <p className="text-5xl lg:text-7xl mb-2 text-blue-400 font-bold">
+              Dream Job
+            </p>
           </div>
           <p className="text-lg lg:text-xl font-light text-gray-700 my-8">
             This is a simple hero unit, a simple jumbotron-style component for
@@ -24,7 +28,7 @@ const HeroSection = () => {
             Get Started
           </button>
         </div>
-        <div className="lg:w-1/2">
+        <div className="lg:w-1/2 hidden lg:block">
           <img src={hero} alt="Hero Image" className="w-full h-auto " />
         </div>
       </div>

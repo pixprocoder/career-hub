@@ -23,8 +23,8 @@ const JobDetails = () => {
   return (
     <div>
       <SubHero />
-      <div className="flex justify-around gap-6 mt-10 items-center">
-        <div className="flex-1">
+      <div className="flex flex-col lg:flex-row justify-around gap-6 my-10 items-center">
+        <div className="flex-1 px-4 lg:px-8">
           <p>
             <span className="text-xl font-semibold">Job Description:</span>
             <br />
@@ -54,7 +54,7 @@ const JobDetails = () => {
             <span className="font-light text-gray-900">{job.experience}</span>
           </p>
         </div>
-        <div className="flex-1 px-20">
+        <div className="flex-1 px-4 lg:px-20">
           <div>
             <h1 className="text-xl font-semibold">Job Details</h1>
             <div className="mt-2">

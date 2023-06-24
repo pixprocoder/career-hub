@@ -4,7 +4,7 @@ import SingleJob from "./SingleJob";
 
 const FeatureJobs = () => {
   return (
-    <section className="py-12 my-32">
+    <section className=" py-12 my-32">
       <div className="container mx-auto px-4">
         <div className="text-center ">
           <h2 className="text-3xl lg:text-6xl text-blue-400 font-bold mb-4">

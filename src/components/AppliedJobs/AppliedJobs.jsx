@@ -11,9 +11,9 @@ const AppliedJobs = () => {
       <div className=" flex gap-6 flex-col">
         {appliedJobs.map((el) => (
           <div key={el.id}>
-            <div className="shadow-md my-10 rounded-lg flex justify-between p-10 items-center ">
-              <div className="flex gap-10 items-center">
-                <div className="bg-gray-200 w-32 flex justify-center items-center p-4 rounded-md h-32">
+            <div className="shadow-md my-10 rounded-lg flex flex-col lg:flex-row justify-between p-10 items-center ">
+              <div className="flex gap-10 flex-col lg:flex-row items-center">
+                <div className="bg-gray-200  w-32 flex justify-center items-center p-4 rounded-md h-32">
                   <img src={el.logo} className="mb-2" alt="" />
                 </div>
                 <div className="flex flex-col ">
@@ -36,7 +36,7 @@ const AppliedJobs = () => {
                 </div>
               </div>
 
-              <div>
+              <div className="mt-6">
                 <Link
                   to={`/job-details/${el.id}`}
                   className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded"
