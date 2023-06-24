@@ -3,11 +3,13 @@ import hero from "../../../assets/images/profile1.png";
 
 const HeroSection = () => {
   return (
-    <section className="bg-gradient-to-r from-cyan-500 to-white py-12">
+    <section className=" py-12">
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between px-4">
         <div className="lg:w-1/2">
           <h1 className="text-4xl lg:text-6xl text-gray-900 font-bold mb-4">
-            Welcome to Our Website
+            Find your dream job
+            <br />
+            <span>All in one place</span>
           </h1>
           <p className="text-lg lg:text-xl text-gray-700 mb-8">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
