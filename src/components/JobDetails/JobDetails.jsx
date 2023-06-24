@@ -7,6 +7,7 @@ import frame1 from "../../assets/Icons/frame-1.png";
 import phone from "../../assets/Icons/Frame-2.png";
 import email from "../../assets/Icons/Frame-3.png";
 import location from "../../assets/Icons/Frame-4.png";
+import { addToDb } from "../utils/FakeDb";
 
 // eslint-disable-next-line react/prop-types
 const JobDetails = () => {
@@ -14,6 +15,10 @@ const JobDetails = () => {
   const { id } = useParams();
   const filteredJobs = allJobs.filter((job) => job.id === Number(id));
   const [job] = filteredJobs;
+
+  const handleApplyJobs = (job) => {
+    addToDb(job);
+  };
 
   return (
     <div>
@@ -80,7 +85,10 @@ const JobDetails = () => {
               </div>
             </div>
           </div>
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded w-full mt-8 ">
+          <button
+            onClick={() => handleApplyJobs(job)}
+            className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded w-full mt-8 "
+          >
             Apply Now
           </button>
         </div>

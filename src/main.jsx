@@ -3,11 +3,15 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
 import "./index.css";
-import About from "./components/About/About.jsx";
-import Contact from "./components/Contact/Contact.jsx";
+
 import Home from "./components/Home/Home.jsx";
 import Statistics from "./components/Statistics/statistics.jsx";
 import JobDetails from "./components/JobDetails/JobDetails.jsx";
+import AppliedJobs from "./components/AppliedJobs/AppliedJobs.jsx";
+import NotFound from "./components/NotFound/NotFound.jsx";
+import Blog from "./components/Blog/Blog.jsx";
+
+import Blog from "./components/Blog/Blog.jsx";
 
 const router = createBrowserRouter([
   {
@@ -22,28 +26,26 @@ const router = createBrowserRouter([
         path: "/home",
         element: <Home />,
       },
+
       {
-        path: "/about",
-        element: <About />,
+        path: "/applied-jobs",
+        element: <AppliedJobs />,
       },
       {
         path: "/statistics",
         element: <Statistics />,
       },
-      {
-        path: "/service",
-        element: <div>This is for testing</div>,
-      },
+
       {
         path: "/job-details/:id",
         element: <JobDetails />,
       },
-
       {
-        path: "/contact",
-        element: <Contact />,
+        path: "/blog",
+        element: <Blog />,
       },
     ],
+    errorElement: <NotFound />,
   },
 ]);
 
