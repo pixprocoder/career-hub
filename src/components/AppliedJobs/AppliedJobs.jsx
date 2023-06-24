@@ -1,10 +1,11 @@
 import React from "react";
 import { getAppliedJobs } from "../utils/FakeDb";
 import SubHero from "../Header/SubHero/SubHero";
+import { Link } from "react-router-dom";
 
 const AppliedJobs = () => {
   const appliedJobs = getAppliedJobs();
-  console.log(appliedJobs);
+
   return (
     <section>
       <SubHero />
@@ -23,7 +24,7 @@ const AppliedJobs = () => {
                   <p className="text-gray-600">{el.companyName}</p>
                   <div className="flex my-4">
                     <button className="px-2 py-1 border rounded-lg ">
-                      {el.jobType.option2}
+                      {el.jobType.option1}
                     </button>
                     <button className="px-2 py-1 border rounded-lg ">
                       {el.jobType.option2}
@@ -37,9 +38,12 @@ const AppliedJobs = () => {
               </div>
 
               <div>
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded ">
+                <Link
+                  to={`/job-details`}
+                  className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded "
+                >
                   View Details
-                </button>
+                </Link>
               </div>
             </div>
           </>

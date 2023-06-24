@@ -6,7 +6,6 @@ const SubHero = () => {
   return (
     <div className="flex justify-between  items-center">
       <img src={vector} alt="" />
-      <h1 className="text-3xl text-blue-400 font-bold">Job Details</h1>
       <img src={vector1} alt="" />
     </div>
   );

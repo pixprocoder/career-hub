@@ -7,32 +7,34 @@ const Header = () => {
     <div>
       <nav className="p-4 flex items-center justify-between">
         <div className="flex items-center">
-          <img src={logo} alt="Logo" />
+          <Link to="/home">
+            <img src={logo} alt="Logo" />
+          </Link>
         </div>
 
-        <ul className="flex items-center space-x-4">
-          <Link to="/home" className=" cursor-pointer">
+        <ul className="flex items-center space-x-4 font-semibold">
+          <Link to="/home" className=" cursor-pointer hover:text-blue-400">
             Home
           </Link>
-          <Link to="/statistics" className=" cursor-pointer">
+          <Link
+            to="/statistics"
+            className=" cursor-pointer hover:text-blue-400"
+          >
             Statistics
           </Link>
-          <Link to="/about" className=" cursor-pointer">
-            About
-          </Link>
-          <Link to="/applied-jobs" className=" cursor-pointer">
+          <Link
+            to="/applied-jobs"
+            className=" cursor-pointer hover:text-blue-400"
+          >
             Applied Jobs
           </Link>
-          <Link to="/service" className=" cursor-pointer">
-            Services
-          </Link>
-          <Link to="/contact" className=" cursor-pointer">
-            Contact
+          <Link to="/blog" className=" cursor-pointer hover:text-blue-400">
+            Blog
           </Link>
         </ul>
 
         <button className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">
-          Sign In
+          Start Applying
         </button>
       </nav>
     </div>
