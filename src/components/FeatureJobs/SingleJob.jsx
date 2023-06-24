@@ -1,9 +1,10 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import locationImage from "../../assets/Icons/Frame-4.png";
+import { Link } from "react-router-dom";
 
 const SingleJob = ({ job }) => {
-  const { name, logo, companyName, salary, location, experience, jobType } =
+  const { name, logo, companyName, salary, location, experience, jobType, id } =
     job;
   return (
     <div className="bg-white p-4 rounded shadow">
@@ -31,9 +32,12 @@ const SingleJob = ({ job }) => {
         <p className="text-gray-600">{salary}</p>
       </div>
 
-      <button className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded ">
+      <Link
+        to={`/job-details/${id}`}
+        className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded "
+      >
         View Details
-      </button>
+      </Link>
     </div>
   );
 };

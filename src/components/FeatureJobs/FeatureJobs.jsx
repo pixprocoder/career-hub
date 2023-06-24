@@ -21,7 +21,7 @@ const FeatureJobs = () => {
           ))}
         </div>
         <button className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded mt-8 block  mx-auto">
-          View All Categories
+          View All Jobs
         </button>
       </div>
     </section>
