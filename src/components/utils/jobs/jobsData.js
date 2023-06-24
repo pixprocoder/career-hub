@@ -11,7 +11,7 @@ export const jobs = [
     companyName: "Microsoft",
     location: "Hyderabad, Telangana",
     salary: "₹ 5,00,000 - 6,00,000 P.A.",
-    experience: "2-5 years",
+    experience: "2-5 years exprience",
     jobType: {
       option1: "Full Time",
       option2: "Remote",
@@ -27,7 +27,7 @@ export const jobs = [
     companyName: "Microsoft",
     location: "Hyderabad, Telangana",
     salary: "₹ 5,00,000 - 6,00,000 P.A.",
-    experience: "2-5 years",
+    experience: "2-5 years exprience",
     jobType: {
       option1: "Full Time",
       option2: "Remote",
@@ -43,7 +43,7 @@ export const jobs = [
     companyName: "Microsoft",
     location: "Hyderabad, Telangana",
     salary: "₹ 5,00,000 - 6,00,000 P.A.",
-    experience: "2-5 years",
+    experience: "2-5 years exprience",
     jobType: {
       option1: "Full Time",
       option2: "Remote",
@@ -59,7 +59,7 @@ export const jobs = [
     companyName: "Microsoft",
     location: "Hyderabad, Telangana",
     salary: "₹ 5,00,000 - 6,00,000 P.A.",
-    experience: "2-5 years",
+    experience: "2-5 years experience",
     jobType: {
       option1: "Full Time",
       option2: "Remote",
