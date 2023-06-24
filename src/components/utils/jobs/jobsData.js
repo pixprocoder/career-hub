@@ -9,9 +9,9 @@ export const jobs = [
     name: "Technical Support Engineer",
     logo: logo1,
     companyName: "Microsoft",
-    location: "Hyderabad, Telangana",
-    salary: "₹ 5,00,000 - 6,00,000 P.A.",
-    experience: "2-5 years exprience",
+    location: "Dhaka, Bangladesh",
+    salary: "$12/per month",
+    experience: "2-5 years experience",
     jobType: {
       option1: "Full Time",
       option2: "Remote",
@@ -41,9 +41,9 @@ export const jobs = [
     name: "Software Engineer",
     logo: logo2,
     companyName: "Microsoft",
-    location: "Hyderabad, Telangana",
-    salary: "₹ 5,00,000 - 6,00,000 P.A.",
-    experience: "2-5 years exprience",
+    location: "Paris, france",
+    salary: "$35/hr",
+    experience: "5 years experience",
     jobType: {
       option1: "Full Time",
       option2: "Remote",
@@ -70,12 +70,12 @@ export const jobs = [
   },
   {
     id: 3,
-    name: "Technical Support Engineer",
+    name: "Product manager",
     logo: logo3,
     companyName: "Microsoft",
-    location: "Hyderabad, Telangana",
-    salary: "₹ 5,00,000 - 6,00,000 P.A.",
-    experience: "2-5 years exprience",
+    location: "Toronto, Telangana, Canada",
+    salary: "$70,000 - $80,000 a year",
+    experience: "2-5 years experience",
     jobType: {
       option1: "Full Time",
       option2: "Remote",
@@ -106,7 +106,7 @@ export const jobs = [
     logo: logo4,
     companyName: "Microsoft",
     location: "Hyderabad, Telangana",
-    salary: "₹ 5,00,000 - 6,00,000 P.A.",
+    salary: "$33,000 - $35,000 a year",
     experience: "2-5 years experience",
     jobType: {
       option1: "Full Time",
@@ -122,7 +122,7 @@ export const jobs = [
     educationRequirements:
       "A bachelor's degree in computer science, human-computer interaction, or a related field is often required. Some employers may prefer candidates with a master's degree in a related field.",
     jobDetails: {
-      jobTitle: "Technical Support Engineer",
+      jobTitle: "UI/UX Designer",
       contact: {
         phone: "1234567890",
 

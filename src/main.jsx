@@ -8,6 +8,7 @@ import Contact from "./components/Contact/Contact.jsx";
 import Home from "./components/Home/Home.jsx";
 import Statistics from "./components/Statistics/statistics.jsx";
 import JobDetails from "./components/JobDetails/JobDetails.jsx";
+import AppliedJobs from "./components/AppliedJobs/AppliedJobs.jsx";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/applied-jobs",
+        element: <AppliedJobs />,
       },
       {
         path: "/statistics",
