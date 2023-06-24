@@ -1,3 +1,5 @@
+import { toast } from "react-toastify";
+
 const addToDb = (job) => {
   const existingData = localStorage.getItem("applied-job");
   let appliedJobs = [];
@@ -12,13 +14,14 @@ const addToDb = (job) => {
     appliedJobs.filter((appliedJob) => appliedJob.id === job.id).length > 0;
 
   if (jobExists) {
-    return;
+    return toast.error("Already Applied");
   } else {
     appliedJobs.push(job);
     localStorage.setItem("applied-job", JSON.stringify(appliedJobs));
   }
 
   localStorage.setItem("applied-job", JSON.stringify(appliedJobs));
+  toast.success("Job Applied Successfully");
 };
 
 const getAppliedJobs = () => {

@@ -2,17 +2,15 @@ import React from "react";
 import { getAppliedJobs } from "../utils/FakeDb";
 import SubHero from "../Header/SubHero/SubHero";
 import { Link } from "react-router-dom";
-import { Link } from "react-router-dom";
 
 const AppliedJobs = () => {
   const appliedJobs = getAppliedJobs();
-  console.log(appliedJobs);
   return (
     <section>
       <SubHero />
       <div className=" flex gap-6 flex-col">
         {appliedJobs.map((el) => (
-          <>
+          <div key={el.id}>
             <div className="shadow-md my-10 rounded-lg flex justify-between p-10 items-center ">
               <div className="flex gap-10 items-center">
                 <div className="bg-gray-200 w-32 flex justify-center items-center p-4 rounded-md h-32">

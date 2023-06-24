@@ -4,14 +4,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
 import "./index.css";
 
+// components
 import Home from "./components/Home/Home.jsx";
 import Statistics from "./components/Statistics/statistics.jsx";
 import JobDetails from "./components/JobDetails/JobDetails.jsx";
 import AppliedJobs from "./components/AppliedJobs/AppliedJobs.jsx";
-import NotFound from "./components/NotFound/NotFound.jsx";
-import Blog from "./components/Blog/Blog.jsx";
-
-import Blog from "./components/Blog/Blog.jsx";
 
 const router = createBrowserRouter([
   {
@@ -40,12 +37,7 @@ const router = createBrowserRouter([
         path: "/job-details/:id",
         element: <JobDetails />,
       },
-      {
-        path: "/blog",
-        element: <Blog />,
-      },
     ],
-    errorElement: <NotFound />,
   },
 ]);
 

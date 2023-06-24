@@ -1,8 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
+import { getAppliedJobs } from "../utils/FakeDb";
 
 const Header = () => {
+  const appliedJobs = getAppliedJobs();
+  if (appliedJobs.length > 0) {
+    console.log(appliedJobs);
+  } else {
+    console.log("No jobs applied");
+  }
   return (
     <div>
       <nav className="p-4 flex items-center justify-between">
@@ -22,12 +29,16 @@ const Header = () => {
           >
             Statistics
           </Link>
-          <Link
-            to="/applied-jobs"
-            className=" cursor-pointer hover:text-blue-400"
-          >
-            Applied Jobs
-          </Link>
+          {appliedJobs.length > 0 ? (
+            <Link
+              to="/applied-jobs"
+              className=" cursor-pointer hover:text-blue-400"
+            >
+              Applied Jobs
+            </Link>
+          ) : (
+            ""
+          )}
           <Link to="/blog" className=" cursor-pointer hover:text-blue-400">
             Blog
           </Link>
